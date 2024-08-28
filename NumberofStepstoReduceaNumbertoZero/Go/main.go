@@ -4,6 +4,14 @@ import "fmt"
 
 func main() {
 	fmt.Println(numberOfSteps(14)) // 6
+	/*
+		7
+		6
+		3
+		2
+		1
+		0
+	*/
 }
 
 func numberOfSteps(num int) int {
