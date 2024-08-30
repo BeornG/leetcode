@@ -15,7 +15,7 @@ func main() {
 	fmt.Println(minimumSum(1000)) // 1
 	fmt.Println(minimumSum(9999)) // 198
 	fmt.Println(minimumSum(1001)) // 2
-	// fmt.Println(minimumSum(0123)) leading zero integer does not work in Go?
+	// fmt.Println(minimumSum(0123)) // leading zero integer does not work in Go?
 }
 
 func minimumSum(num int) int {
@@ -23,7 +23,7 @@ func minimumSum(num int) int {
 	numStr := strconv.Itoa(num)
 
 	// Create a slice to store the digits
-	digits := make([]int, 4)
+	digits := make([]int, len(numStr))
 
 	for i, c := range numStr {
 		digits[i], _ = strconv.Atoi(string(c))
